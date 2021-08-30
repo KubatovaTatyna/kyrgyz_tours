@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="./style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <div class="container-fluid ski-bg text-center">
+    <div class=" navbar-default d-md-flex flex-column">
+      <div class="navbar-header">
+        <a href="#"><img src="./images/yurtv2_0 2.png" alt="" width="100px"></a>
+      </div>
+      <div class="">
+        <ul class="navbar-nav d-md-flex flex-row justify-content-center my-3">
+          <li class=""><a href="./index.html" class="mx-3">Home</a></li>
+          <li class=""><a href="#" class="mx-3">Tours</a></li>
+          <li class=""><a href="#" class="mx-3">Contacts</a></li>
+        </ul>
+        <div class="nav-open">
+          <div class="menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div id="navigation" class="hidden">
+            <div class="nav">
+              <ul>
+                <li class=""><a href="./index.html" class="mx-3">Home</a></li>
+                <li class=""><a href="#tours" class="mx-3">Tours</a></li>
+                <li class=""><a href="#contacts" class="mx-3">Contacts</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ski-tours">
+    <div class="d-md-flex flex-column my-5 ski-shaded-moun-container">
+      <h2 class="ski-title">SKIING SHADED MOUNTAINS</h2>
+      <div class="d-md-flex">
+        <div class="">
+          <a href="./ski-shaded-mountains.html">
+            <img class="ski-shaded-moun-img wow animate__animated animate__fadeInLeft" src="./images/snowboarding-4763731_960_720.webp" alt="" width="650px">
+          </a>
+        </div>
+        <div class="text-center wow animate__animated animate__fadeInRight">
+          <p class="mx-auto my-5 ski-text">Click in if you have a glue about the words like: Yurt life, Trail breaking,
+            First descent, White room,
+            Bootpacking, Kick turns, Sick day, Tree line, etc. Yep!? Than join us this winter for a unique Snowmad
+            experiences in Kyrgyzstan. </p>
+          <button class="btn-primary w-25 border rounded p-2"><a href="./ski-shaded-mountains.html"
+              class="text-white text-decoration-none">more</a></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-md-flex flex-column my-5 catskitouring-container">
+      <h2 class="ski-title-right">CATSKITOURING WEEK IN KYRGYZSTAN</h2>
+      <div class="d-md-flex flex-row-reverse">
+        <div class="wow animate__animated animate__fadeInBottomRight">
+          <img class="catskitouring" src="./images/l.jpg" alt="" width="670px">
+        </div>
+        <div class="text-center wow animate__animated animate__fadeInTopLeft">
+          <p class="ski-text mx-auto my-5">This adventure is available for group of advanced powder seekers slash
+            culture
+            explorers and has been
+            specifically designed in purpose to get furder and higher up the mountains by cat asisted venturing. </p>
+          <button class="btn-primary w-25 border text-white rounded p-2">more</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-md-flex flex-column my-5 saryjaz-container">
+      <h2 class="ski-title">SARYJAZ EXPEDITION</h2>
+      <div class="d-md-flex">
+        <div class="text-center">
+          <img class="saryjaz wow animate__animated animate__fadeInLeft" src="./images/unnamed (1).jpg" alt="" width="580px">
+        </div>
+        <div class="text-center wow animate__animated animate__fadeInRight">
+          <p class="ski-text mx-auto my-5">Real adventure starts beyond the habitual supports, only relying on native
+            experience can get you into the
+            most
+            unexplored Mountains. Hitting first descents are still possible not otherwise than in the remotest flung
+            wilderness as it means. </p>
+          <button class="btn-primary w-25 border text-white rounded p-2">more</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <main class="carousel-tours">
+    <div class="carousel slide" id="carouselControl" data-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselControl" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselControl" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselControl" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <h2>SKIING SHADED MOUNTAINS</h2>
+          <a href="./ski-shaded-mountains.html">
+            <img class="d-block w-100 justify-content-center" src="./images/snowboarding-4763731_960_720.webp" alt="">
+          </a>
+        </div>
+
+        <div class="carousel-item">
+          <h2>CATSKITOURING WEEK IN KYRGYZSTAN</h2>
+          <img class="d-block w-100" src="./images/unnamed (1).jpg" alt="">
+        </div>
+
+        <div class="carousel-item">
+          <h2>SARYJAZ EXPEDITION</h2>
+          <img class="d-block w-100 " src="./images/l.jpg">
+        </div>
+
+      </div>
+      <a href="#carouselControl" class="carousel-control-prev" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#carouselControl" class="carousel-control-next" role="button" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </main>
+
+  <div class="container-fluid">
+    <img src="./images/footer img.png" alt="" width="100%">
+  </div>
+  <footer class="container mx-auto" id="contacts">
+    <div class="d-md-flex justify-content-center">
+      <div class="footer-info">
+        <h3>Kyrgyz Tours</h3>
+        <p class="">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique non, cum incidunt
+          accusantium optio
+          expedita.</p>
+      </div>
+      <div class="footer-info">
+        <h3>Contacts</h3>
+        <h6>kyrgyz tours project</h6>
+        <ul>
+          <li><a href="#"><img src="./images/whatsapp.png" alt="" width="30px">+996552552529</a></li>
+          <li><a href="#"><img src="./images/gmail.png" alt="" width="30px">contact@kyrgyz-tours.info</a></li>
+          <li><a href="#"><img src="./images/facebook.png" alt="" width="30px">kyrgyz.tours</a></li>
+          <li><a href="#"><img src="./images/instagram.png" alt="" width="30px">@kyrgyztours</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+  <script src="./scripts.js"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+    integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+    crossorigin="anonymous"></script>
+
+  <script src="./wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>
