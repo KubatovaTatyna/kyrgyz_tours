@@ -232,6 +232,70 @@ details[open] #close {
   }
 }
 
+.tours img:hover{
+transform: scale(1.2);
+transition: .3s ease;
+}
+
+.ski-title {
+  margin-left: 2rem;
+  padding: 0;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: arial rounded mt;
+  cursor: pointer;
+}
+.ski-title-right {
+  margin-right: 2rem;
+  padding: 0;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: arial rounded mt;
+  cursor: pointer;
+}
+
+.ski-title span,
+.ski-title-right span {
+  display: inline-flex;
+  color: #206bb3;
+}
+
+.ski-title span:nth-child(even),
+.ski-title-right span:nth-child(even) {
+  overflow: hidden;
+  transition: ease-in-out 0.5s;
+  color: #333;
+  border-bottom: 8px solid #206bb3;
+  letter-spacing: -1em;
+}
+
+.ski-title:hover span:nth-child(even),
+.ski-title-right:hover span:nth-child(even) {
+  letter-spacing: 0;
+  cursor: pointer;
+}
+
+.ski-title:hover span:nth-child(2),
+.ski-title-right:hover span:nth-child(2) {
+  transition-delay: 0s;
+
+}
+
+.ski-title:hover span:nth-child(4),
+.ski-title-right:hover span:nth-child(4) {
+  transition-delay: 0.5s;
+
+}
+
+.ski-title:hover span:nth-child(6),
+.ski-title-right:hover span:nth-child(6) {
+  transition-delay: 1s;
+}
+
+.ski-title-right:hover span:nth-child(8) {
+  transition-delay: 1.5s;
+}
+
 @media screen and (max-width: 1200px) {
   .ski-shaded-moun-bg {
     height: 770px;

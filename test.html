@@ -7,94 +7,66 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    h1,
-    details {
-      display: inline;
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #fff;
     }
 
-    details {
-      position: relative;
-    }
-
-    details summary {
-      display: block;
+    h1 {
+      margin: 0;
+      padding: 0;
+      font-size: 60px;
+      text-transform: uppercase;
+      font-family: arial rounded mt;
       cursor: pointer;
-      color: red;
+
     }
 
-    details summary:focus {
-      outline: none;
+    h1 span {
+      display: inline-flex;
+      color: #206bb3;
     }
 
-    details[open] {
-      display: block;
-      padding-bottom: 25px;
-      padding-top: 10px;
-      animation: open .2s linear;
+    h1 span:nth-child(even) {
+      overflow: hidden;
+      transition: ease-in-out 0.5s;
+      color: #333;
+      border-bottom: 8px solid #206bb3;
+      letter-spacing: -1em;
     }
 
-    details[open] summary {
-      position: absolute;
-      bottom: 0;
-      left: 0;
+    h1:hover span:nth-child(even) {
+      letter-spacing: 0;
+      cursor: pointer;
     }
 
-    details #open {
-      padding-left: 5px;
-      text-align: middle;
+    h1:hover span:nth-child(2) {
+      transition-delay: 0s;
+
     }
 
-    details #open:after {
-      display: inline-block;
-      position: relative;
-      top: -3px;
-      padding-left: 8px;
-      content: "\00bb";
-      transform: rotate(90deg);
+    h1:hover span:nth-child(4) {
+      transition-delay: 0.5s;
+
     }
 
-    details[open] #open {
-      display: none;
-    }
-
-    details #close {
-      display: none;
-    }
-
-    details[open] #close {
-      display: block;
-    }
-
-    ::-webkit-details-marker {
-      display: none;
-    }
-
-    @keyframes open {
-      0% {
-        opacity: 0;
-        transform: translateY(-10px);
-      }
-
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    h1:hover span:nth-child(6) {
+      transition-delay: 1s;
     }
   </style>
 </head>
 
 <body>
-  <h1>Lorem ipsum dolor sit amet.</h1>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam magnam alias labore inventore soluta aliquam, omnis dolor libero repudiandae doloribus.</p>
-  <details>
-    <summary>
-      <span id="open">read more</span>
-      <span id="close">close</span>
-    </summary>
-    <h4>Lorem ipsum dolor sit.</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem eligendi recusandae ratione in sit voluptas
-      doloribus eveniet harum nam repellat fugiat, id atque cupiditate? In suscipit accusantium iusto! Omnis, ipsum.</p>
-  </details>
+  <h1>
+    <span>S</span><span>ki</span>
+    <span>S</span><span>haded</span>
+    <span>M</span><span>ountains</span>
+  </h1>
 </body>
 
 </html>
