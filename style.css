@@ -233,7 +233,7 @@ details[open] #close {
 }
 
 .tours img:hover{
-transform: scale(1.2);
+transform: scale(1.1);
 transition: .3s ease;
 }
 
