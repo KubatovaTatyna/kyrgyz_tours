@@ -7,66 +7,63 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background: #fff;
+    .scene {
+      width: 300px;
+      height: 400px;
+      perspective: 600px;
     }
 
-    h1 {
-      margin: 0;
-      padding: 0;
-      font-size: 60px;
-      text-transform: uppercase;
-      font-family: arial rounded mt;
+    .card {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transition: transform 1s;
+      transform-style: preserve-3d;
+    }
+
+    .card__face {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      backface-visibility: hidden;
+    }
+
+    .card__face--front {
+      background: red;
+    }
+
+    .card__face--back {
+      transform: rotateY(180deg);
+    }
+
+    .card:hover {
+      transform: rotateY(180deg);
+      transition: all ease 2s;
       cursor: pointer;
-
-    }
-
-    h1 span {
-      display: inline-flex;
-      color: #206bb3;
-    }
-
-    h1 span:nth-child(even) {
-      overflow: hidden;
-      transition: ease-in-out 0.5s;
-      color: #333;
-      border-bottom: 8px solid #206bb3;
-      letter-spacing: -1em;
-    }
-
-    h1:hover span:nth-child(even) {
-      letter-spacing: 0;
-      cursor: pointer;
-    }
-
-    h1:hover span:nth-child(2) {
-      transition-delay: 0s;
-
-    }
-
-    h1:hover span:nth-child(4) {
-      transition-delay: 0.5s;
-
-    }
-
-    h1:hover span:nth-child(6) {
-      transition-delay: 1s;
     }
   </style>
 </head>
 
 <body>
-  <h1>
-    <span>S</span><span>ki</span>
-    <span>S</span><span>haded</span>
-    <span>M</span><span>ountains</span>
-  </h1>
+  <div class="scene">
+    <div class="card">
+      <div class="card__face card__face--front">
+        <img src="./new-images/pexels-eberhard-grossgasteiger-1366919.jpg" alt="" width="300px" height="400px">
+      </div>
+      <div class="card__face card__face--back">
+        <div class="text-center">
+          <p class="mx-auto my-5 ski-text w-75">Click in if you have a glue about the words like: Yurt life, Trail breaking,
+            First descent, White room,
+            Bootpacking, Kick turns, Sick day, Tree line, etc. Yep!? Than join us this winter for a unique Snowmad
+            experiences in Kyrgyzstan. </p>
+          <button class="btn-primary w-15 border rounded p-2"><a href="./ski-shaded-mountains.html"
+              class="text-white text-decoration-none">more</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+  </script>
 </body>
 
 </html>

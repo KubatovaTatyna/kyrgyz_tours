@@ -1,0 +1,71 @@
+
+
+.body {
+  margin: 0;
+  padding: 0;
+}
+.parallax {
+  background: url("./new-images/header\ img.jpeg") repeat fixed 100%;
+  background-size: cover;
+  color: aliceblue;
+  width: 100%;
+  height: 650px;
+}
+
+.parallax-inner {
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.parallax-about{
+  background: url("./new-images/mountains-276995_1920.jpg") repeat fixed 100%;
+  background-size: cover;
+  width: 100%;
+}
+.parallax-footer {
+  background: url("./new-images/l85BYI.jpg") repeat fixed 100%;
+  background-size: cover;
+  width: 100%;
+}
+.navbar-default {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 9px 13px 0px rgba(0, 0, 0, 0.34);
+  background-color: white;
+  font-family: arial rounded mt;
+}
+.navbar-header {
+  margin-top: 1rem;
+}
+.nav-open {
+  display: none;
+}
+.navbar-nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+}
+.navbar-nav li:hover{
+  transform:translateY(5px) translateX(-5px);
+  transition: all ease .3s;
+  box-shadow: 0px 9px 13px 0px rgba(0, 0, 0, 0.34);
+  border-radius: 10px;
+}
+.tours-slider {
+  display: none;
+}
+footer .footer-info,
+footer .nav{
+max-width: 30%;
+margin: 2rem;
+}
+footer .nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+footer{
+  box-shadow: 0px -2px 11px 0px rgb(0 0 0 / 45%);
+}
+
